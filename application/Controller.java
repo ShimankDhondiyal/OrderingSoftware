@@ -61,7 +61,7 @@ public class Controller {
     	}
     	else {
     		ArrayList<String> toppingsList = new ArrayList<>();
-    		if(toppingsList.size() >= MIN_TOPPINGS && toppingsList.size() <= MAX_TOPPINGS) {
+    		if(selectedToppings.getItems().size() >= MIN_TOPPINGS && selectedToppings.getItems().size() <= MAX_TOPPINGS) {
         		toppingsList.addAll(selectedToppings.getItems());
         		BuildYourOwn newPizza = new BuildYourOwn(pizzaOptions.getValue(), sizeOptions.getValue(), toppingsList); 
         		order.add(newPizza);
